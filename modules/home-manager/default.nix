@@ -1,6 +1,7 @@
 {
   home-manager,
-  self
+  self,
+  name
 }: {
   config,
   pkgs,
