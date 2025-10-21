@@ -13,6 +13,7 @@
     mkEnableOption
     ;
 
+in
 {
   imports = [
     ./atuin.nix
