@@ -10,7 +10,7 @@
   outputs = { self, nixpkgs, home-manager }@ inputs: {
     homeModules = {
       default = import ./modules/home-manager {
-        inherit self home-manager;
+        inherit self nixpkgs home-manager;
         name = "default";
       };
     };

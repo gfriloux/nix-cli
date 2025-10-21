@@ -1,4 +1,17 @@
-{ lib, ... }:
+{
+  home-manager,
+  self
+}: {
+  config,
+  pkgs,
+  lib,
+  ...
+}: let
+  inherit
+    (lib)
+    mkDefault
+    mkEnableOption
+    ;
 
 {
   imports = [
@@ -6,11 +19,11 @@
   ];
 
   options.nix-cli.hm = {
-    enable = lib.mkEnableOption "Enable nix-cli home-manager modules globally";
+    enable = mkEnableOption "Enable nix-cli home-manager modules globally";
   };
 
   config = {
-    nix-cli.hm.enable = lib.mkDefault false;
+    nix-cli.hm.enable = mkDefault false;
     home.stateVersion = "25.05";
 
     # let home-manager control itself
