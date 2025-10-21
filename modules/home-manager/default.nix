@@ -27,8 +27,6 @@ in
 
   config = {
     nix-cli.hm.enable = mkDefault false;
-    home.stateVersion = "25.05";
-
     # let home-manager control itself
     programs.home-manager.enable = true;
   };
