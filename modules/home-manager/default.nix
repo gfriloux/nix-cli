@@ -19,8 +19,12 @@ in
 {
   imports = [
     ./atuin.nix
+    ./bat.nix
     ./btop.nix
+    ./delta.nix
     ./fzf.nix
+    ./micro.nix
+    ./zellij.nix
   ];
 
   options.nix-cli.hm = {
