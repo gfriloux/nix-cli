@@ -19,6 +19,8 @@ in
 {
   imports = [
     ./atuin.nix
+    ./btop.nix
+    ./fzf.nix
   ];
 
   options.nix-cli.hm = {
