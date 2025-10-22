@@ -22,13 +22,26 @@ in
     ./bat.nix
     ./broot.nix
     ./btop.nix
+    ./croc.nix
     ./delta.nix
+    ./dive.nix
+    ./dogdns.nix
+    ./fish.nix
     ./fzf.nix
+    ./gum.nix
     ./jq.nix
+    ./just.nix
     ./lsd.nix
     ./micro.nix
+    ./ncdu.nix
     ./oh-my-posh.nix
+    ./prettyping.nix
+    ./pv.nix
+    ./pwgen.nix
     ./ripgrep.nix
+    ./rsync.nix
+    ./viu.nix
+    ./xcp.nix
     ./zellij.nix
   ];
 
