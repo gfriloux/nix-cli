@@ -9,12 +9,7 @@
   lib,
   ...
 }: let
-  inherit
-    (lib)
-    mkDefault
-    mkEnableOption
-    ;
-
+  inherit (lib) mkDefault mkEnableOption mkOption types;
 in
 {
   imports = [
@@ -39,6 +34,7 @@ in
     ./prettyping.nix
     ./pv.nix
     ./pwgen.nix
+    ./rbw.nix
     ./ripgrep.nix
     ./rsync.nix
     ./viu.nix
@@ -52,7 +48,6 @@ in
 
   config = {
     nix-cli.hm.enable = mkDefault false;
-    # let home-manager control itself
     programs.home-manager.enable = true;
   };
 }
