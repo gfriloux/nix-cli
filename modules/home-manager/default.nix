@@ -27,6 +27,7 @@ in
     ./jq.nix
     ./lsd.nix
     ./micro.nix
+    ./oh-my-posh.nix
     ./ripgrep.nix
     ./zellij.nix
   ];
