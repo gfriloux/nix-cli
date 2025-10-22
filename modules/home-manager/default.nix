@@ -28,6 +28,7 @@ in
     ./dogdns.nix
     ./fish.nix
     ./fzf.nix
+    ./glow.nix
     ./gum.nix
     ./jq.nix
     ./just.nix
