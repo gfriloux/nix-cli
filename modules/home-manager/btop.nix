@@ -5,8 +5,8 @@ let
 in
 {
   config = lib.mkIf cfg.enable {
-    home.packages = with pkgs; [
-      btop
-    ];
+    programs.btop = {
+      enable = true;
+    };
   };
 }
