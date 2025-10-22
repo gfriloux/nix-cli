@@ -20,10 +20,14 @@ in
   imports = [
     ./atuin.nix
     ./bat.nix
+    ./broot.nix
     ./btop.nix
     ./delta.nix
     ./fzf.nix
+    ./jq.nix
+    ./lsd.nix
     ./micro.nix
+    ./ripgrep.nix
     ./zellij.nix
   ];
 
