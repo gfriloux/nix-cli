@@ -23,6 +23,7 @@ in
     ./dogdns.nix
     ./fish.nix
     ./fzf.nix
+    ./git.nix
     ./glow.nix
     ./gum.nix
     ./jq.nix
