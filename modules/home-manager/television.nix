@@ -6,7 +6,7 @@ in
 {
   config = lib.mkIf cfg.enable {
     home.packages = with pkgs; [
-      dogdns
+      fd
     ];
     programs.television = {
       enable = true;
