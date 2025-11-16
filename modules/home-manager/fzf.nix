@@ -8,5 +8,8 @@ in
     programs.fzf = {
       enable = true;
     };
+    home.packages = with pkgs; [
+      fzf-make
+    ];
   };
 }
