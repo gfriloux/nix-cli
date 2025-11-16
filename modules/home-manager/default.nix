@@ -23,6 +23,7 @@ in
     ./dogdns.nix
     ./fish.nix
     ./fzf.nix
+    ./git-workspace.nix
     ./git.nix
     ./glow.nix
     ./gum.nix
@@ -38,6 +39,7 @@ in
     ./rbw.nix
     ./ripgrep.nix
     ./rsync.nix
+    ./television.nix
     ./viu.nix
     ./xcp.nix
     ./zellij.nix
