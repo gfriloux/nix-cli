@@ -27,6 +27,7 @@ in
     ./git.nix
     ./glow.nix
     ./gum.nix
+    ./helix.nix
     ./jq.nix
     ./just.nix
     ./lsd.nix
