@@ -7,12 +7,9 @@ in
     enable = mkEnableOption "Enable nix-cli home-manager modules globally";
   };
 
-  config = {
+  config = lib.mkIf cfg.enable {
     nix-cli.hm.enable = mkDefault false;
     programs.home-manager.enable = true;
-  };
-
-  config = lib.mkIf cfg.enable {
     programs = {
       atuin.enable = true;
       bat.enable = true;
