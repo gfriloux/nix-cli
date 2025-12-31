@@ -4,7 +4,7 @@ let
 in
 {
   options.nix-cli.hm = {
-    enable = mkEnableOption "Enable nix-cli home-manager modules globally";
+    enable = lib.mkEnableOption "Enable nix-cli home-manager modules globally";
   };
 
   config = lib.mkIf cfg.enable {
