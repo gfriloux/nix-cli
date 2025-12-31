@@ -11,7 +11,7 @@ in
     nix-cli.hm.enable = lib.mkDefault false;
     programs.home-manager.enable = true;
     programs = {
-      atuin.enable = true;
+      #atuin.enable = true;
       bat.enable = true;
       btop.enable = true;
       delta.enable = true;
