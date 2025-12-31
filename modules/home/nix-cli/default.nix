@@ -8,7 +8,7 @@ in
   };
 
   config = lib.mkIf cfg.enable {
-    nix-cli.hm.enable = lib.mkDefault false;
+    #nix-cli.hm.enable = lib.mkDefault false;
     programs.home-manager.enable = true;
     programs = {
       #atuin.enable = true;
