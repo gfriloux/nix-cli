@@ -14,7 +14,7 @@ in
       #atuin.enable = true;
       bat.enable = true;
       btop.enable = true;
-      delta.enable = true;
+      #delta.enable = true;
       fish = {
         enable = true;
         shellInit = ''
