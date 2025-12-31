@@ -28,7 +28,7 @@ in
         };
       };
       fzf.enable = true;
-      git.enable = true;
+      #git.enable = true;
       helix.enable = true;
       jq.enable = true;
       lsd.enable = true;
