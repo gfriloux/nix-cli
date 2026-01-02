@@ -18,11 +18,6 @@
       src = ./.;
 
       snowfall = {
-        #meta = {
-        #  name = "sshtui";
-        #  title = "sshtui";
-        #};
-
         namespace = "nix-cli";
       };
       alias = {
