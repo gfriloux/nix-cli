@@ -1,7 +1,8 @@
 # nix-cli
 
-Il s'agit d'un `nix module` qui installe les outils `cli` dont
-j'ai globalement besoin sur toutes les machines que j'utilise.
+Il s'agit d'un `nix module` pour `home-manager` qui installe les
+outils `cli` que j'ai globalement besoin sur toutes les machines
+que j'utilise.
 
 Ça me permet de simplifier l'écriture de mes flakes, rajoutant
 juste ce dépôt dans les inputs pour être peinard.
