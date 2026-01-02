@@ -8,6 +8,10 @@ in
   };
 
   config = lib.mkIf cfg.enable {
+    imports = [
+      gitflow-toolkit.homeModules.gitflow-toolkit
+    ];
+
     programs.home-manager.enable = true;
     programs = {
       atuin.enable = true;
@@ -28,6 +32,7 @@ in
       };
       fzf.enable = true;
       git.enable = true;
+      gitflow-toolkit.enable = true;
       helix.enable = true;
       jq.enable = true;
       lsd.enable = true;
