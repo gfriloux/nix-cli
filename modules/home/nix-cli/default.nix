@@ -3,9 +3,10 @@ let
   cfg = config.nix-cli.hm;
 in
 {
-  imports = [
-    inputs.gitflow-toolkit.homeModules.gitflow-toolkit
-    inputs.sshtui.homeModules.sshtui
+  imports = with inputs; [
+    gitflow-toolkit.homeModules.gitflow-toolkit
+    sshtui.homeModules.sshtui
+    catppuccin.homeModules.catppuccin
   ];
 
   options.nix-cli.hm = {
@@ -64,5 +65,10 @@ in
       xcp
     ];
     xdg.configFile."oh-my-posh/dracula.omp.json".source = oh-my-posh/dracula.omp.json;
+
+    catppuccin = {
+      flavor = "frappe";
+      enable = true;
+    };
   };
 }
