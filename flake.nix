@@ -1,18 +1,32 @@
 {
-  description = "Adeptus Mechanicus gfriloux CLI env";
-
-  inputs.nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-  inputs.home-manager = {
-    url = "github:nix-community/home-manager/master";
-    inputs.nixpkgs.follows = "nixpkgs";
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    home-manager = {
+      url = "github:nix-community/home-manager/master";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    snowfall-lib = {
+      url = "github:snowfallorg/lib";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    flake-utils.url = "github:numtide/flake-utils";
   };
+  outputs = inputs:
+    inputs.snowfall-lib.mkFlake {
+      inherit inputs;
+      systems = [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ];
+      src = ./.;
 
-  outputs = { self, nixpkgs, home-manager }@ inputs: {
-    homeModules = {
-      default = import ./modules/home-manager {
-        inherit self nixpkgs home-manager;
-        name = "default";
+      snowfall = {
+        #meta = {
+        #  name = "sshtui";
+        #  title = "sshtui";
+        #};
+
+        namespace = "nix-cli";
+      };
+      alias = {
+        modules.home.default = "nix-cli";
       };
     };
-  };
 }
