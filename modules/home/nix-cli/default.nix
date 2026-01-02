@@ -9,7 +9,7 @@ in
 
   config = lib.mkIf cfg.enable {
     imports = [
-      gitflow-toolkit.homeModules.gitflow-toolkit
+      inputs.gitflow-toolkit.homeModules.gitflow-toolkit
     ];
 
     programs.home-manager.enable = true;
