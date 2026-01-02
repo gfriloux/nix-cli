@@ -11,10 +11,10 @@ in
     #nix-cli.hm.enable = lib.mkDefault false;
     programs.home-manager.enable = true;
     programs = {
-      #atuin.enable = true;
+      atuin.enable = true;
       bat.enable = true;
       btop.enable = true;
-      #delta.enable = true;
+      delta.enable = true;
       fish = {
         enable = true;
         shellInit = ''
@@ -28,7 +28,7 @@ in
         };
       };
       fzf.enable = true;
-      #git.enable = true;
+      git.enable = true;
       helix.enable = true;
       jq.enable = true;
       lsd.enable = true;
@@ -57,7 +57,6 @@ in
       viu
       xcp
     ];
-    home.file.".config/oh-my-posh/dracula.omp.json".source = oh-my-posh/dracula.omp.json;
     xdg.configFile."oh-my-posh/dracula.omp.json".source = oh-my-posh/dracula.omp.json;
   };
 }
