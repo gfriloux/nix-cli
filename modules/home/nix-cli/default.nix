@@ -1,8 +1,12 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 let
   cfg = config.nix-cli.hm;
 in
 {
+  imports = [
+    inputs.gitflow-toolkit.homeModules.gitflow-toolkit
+  ];
+
   options.nix-cli.hm = {
     enable = lib.mkEnableOption "Enable nix-cli home-manager modules globally";
   };
@@ -28,6 +32,7 @@ in
       };
       fzf.enable = true;
       git.enable = true;
+      gitflow-toolkit.enable = true;
       helix.enable = true;
       jq.enable = true;
       lsd.enable = true;
