@@ -3,15 +3,15 @@ let
   cfg = config.nix-cli.hm;
 in
 {
+  imports = [
+    inputs.gitflow-toolkit.homeModules.gitflow-toolkit
+  ];
+
   options.nix-cli.hm = {
     enable = lib.mkEnableOption "Enable nix-cli home-manager modules globally";
   };
 
   config = lib.mkIf cfg.enable {
-    imports = [
-      inputs.gitflow-toolkit.homeModules.gitflow-toolkit
-    ];
-
     programs.home-manager.enable = true;
     programs = {
       atuin.enable = true;
