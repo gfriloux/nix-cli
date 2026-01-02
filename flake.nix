@@ -15,6 +15,10 @@
       url = "github:gfriloux/gitflow-toolkit-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    sshtui = {
+      url = "github:gfriloux/sshtui";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs = inputs:
     inputs.snowfall-lib.mkFlake {

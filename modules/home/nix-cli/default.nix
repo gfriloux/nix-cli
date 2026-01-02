@@ -5,6 +5,7 @@ in
 {
   imports = [
     inputs.gitflow-toolkit.homeModules.gitflow-toolkit
+    inputs.sshtui.homeModules.sshtui
   ];
 
   options.nix-cli.hm = {
@@ -38,6 +39,7 @@ in
       lsd.enable = true;
       micro.enable = true;
       rbw.enable = true;
+      sshtui.enable = true;
       television.enable = true;
       zellij.enable = true;
     };
