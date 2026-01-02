@@ -68,17 +68,7 @@ in
 
     catppuccin = {
       flavor = "frappe";
-      atuin.enable = true;
-      bat.enable = true;
-      btop.enable = true;
-      kitty.enable = true;
-      delta.enable = true;
-      fish.enable = true;
-      fzf.enable = true;
-      lsd.enable = true;
-      micro.enable = true;
-      television.enable = true;
-      zellij.enable = true;
+      enable = true;
     };
   };
 }
