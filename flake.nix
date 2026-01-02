@@ -19,6 +19,7 @@
       url = "github:gfriloux/sshtui";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    catppuccin.url = "github:catppuccin/nix";
   };
   outputs = inputs:
     inputs.snowfall-lib.mkFlake {
