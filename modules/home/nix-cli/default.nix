@@ -14,6 +14,7 @@ in
   };
 
   config = lib.mkIf cfg.enable {
+    television-ssh.hm.enable = true;
     programs.home-manager.enable = true;
     programs = {
       atuin.enable = true;
