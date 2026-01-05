@@ -40,7 +40,7 @@ in
       lsd.enable = true;
       micro.enable = true;
       rbw.enable = true;
-      programs.television-ssh.enable = true;
+      television-ssh.enable = true;
       television.enable = true;
       zellij.enable = true;
     };
