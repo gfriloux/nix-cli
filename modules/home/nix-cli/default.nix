@@ -5,7 +5,6 @@ in
 {
   imports = with inputs; [
     gitflow-toolkit.homeModules.gitflow-toolkit
-    television-ssh.homeModules.default
     catppuccin.homeModules.catppuccin
   ];
 
