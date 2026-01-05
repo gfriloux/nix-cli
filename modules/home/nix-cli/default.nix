@@ -5,7 +5,7 @@ in
 {
   imports = with inputs; [
     gitflow-toolkit.homeModules.gitflow-toolkit
-    sshtui.homeModules.sshtui
+    television-ssh.homeModules.default
     catppuccin.homeModules.catppuccin
   ];
 
@@ -40,7 +40,7 @@ in
       lsd.enable = true;
       micro.enable = true;
       rbw.enable = true;
-      sshtui.enable = true;
+      programs.television-ssh.enable = true;
       television.enable = true;
       zellij.enable = true;
     };

@@ -15,8 +15,8 @@
       url = "github:gfriloux/gitflow-toolkit-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    sshtui = {
-      url = "github:gfriloux/sshtui";
+    television-ssh = {
+      url = "github:gfriloux/television-ssh-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     catppuccin.url = "github:catppuccin/nix";
