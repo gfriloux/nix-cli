@@ -16,6 +16,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     catppuccin.url = "github:catppuccin/nix";
+    television-ssh = {
+      url = "github:gfriloux/television-ssh-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs = inputs:
     inputs.snowfall-lib.mkFlake {

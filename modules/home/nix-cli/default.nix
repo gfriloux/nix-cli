@@ -6,6 +6,7 @@ in
   imports = with inputs; [
     gitflow-toolkit.homeModules.gitflow-toolkit
     catppuccin.homeModules.catppuccin
+    television-ssh.homeModules.default
   ];
 
   options.nix-cli.hm = {
@@ -40,6 +41,7 @@ in
       micro.enable = true;
       rbw.enable = true;
       television.enable = true;
+      television-ssh.enable = true;
       zellij.enable = true;
     };
     home.packages = with pkgs; [
