@@ -63,6 +63,8 @@ in
       fd
       viu
       xcp
+      alejandra
+      p7zip
     ];
     xdg.configFile."oh-my-posh/dracula.omp.json".source = oh-my-posh/dracula.omp.json;
 
