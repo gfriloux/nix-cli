@@ -65,6 +65,7 @@ in
       xcp
       alejandra
       p7zip
+      nix-output-monitor
     ];
     xdg.configFile."oh-my-posh/dracula.omp.json".source = oh-my-posh/dracula.omp.json;
 
