@@ -47,7 +47,7 @@ in
     home.packages = with pkgs; [
       croc
       dive
-      dogdns
+      doggo
       glow
       gum
       fastfetch
