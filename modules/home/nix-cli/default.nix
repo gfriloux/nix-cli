@@ -27,7 +27,7 @@ in {
       fish = {
         enable = true;
         shellInit = ''
-          oh-my-posh init fish --config ~/.config/oh-my-posh/dracula.omp.json | source
+          oh-my-posh init fish --config ${config.xdg.configHome}/oh-my-posh/dracula.omp.json | source
         '';
         shellAliases = {
           cat = "bat";
