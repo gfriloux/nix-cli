@@ -11,11 +11,12 @@
 in
   mkShell {
     packages = with pkgs; [
-      deadnix
-      statix
       alejandra
+      deadnix
       pre-commit
       serie
+      statix
+      tokei
     ];
 
     shellHook = ''
