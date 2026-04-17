@@ -38,6 +38,10 @@ in {
         enable = true;
         enableGitIntegration = true;
       };
+      direnv = {
+        enable = true;
+        nix-direnv.enable = true;
+      };
       fzf.enable = true;
       git.enable = true;
       gitflow-toolkit.enable = true;
