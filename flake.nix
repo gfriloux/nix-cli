@@ -13,7 +13,10 @@
       url = "github:gfriloux/gitflow-toolkit-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    catppuccin.url = "github:catppuccin/nix";
+    catppuccin = {
+      url = "github:catppuccin/nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     television-ssh = {
       url = "github:gfriloux/television-ssh-flake";
       inputs.nixpkgs.follows = "nixpkgs";
