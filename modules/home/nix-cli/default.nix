@@ -34,11 +34,12 @@ in {
           cp = "xcp";
         };
       };
-      fzf.enable = true;
-      git = {
+      delta = {
         enable = true;
-        delta.enable = true;
+        enableGitIntegration = true;
       };
+      fzf.enable = true;
+      git.enable = true;
       gitflow-toolkit.enable = true;
       helix.enable = true;
       jq.enable = true;
