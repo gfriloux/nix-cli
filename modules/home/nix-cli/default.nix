@@ -1,8 +1,12 @@
-{ config, lib, pkgs, inputs, ... }:
-let
-  cfg = config.nix-cli.hm;
-in
 {
+  config,
+  lib,
+  pkgs,
+  inputs,
+  ...
+}: let
+  cfg = config.nix-cli.hm;
+in {
   imports = with inputs; [
     gitflow-toolkit.homeModules.gitflow-toolkit
     catppuccin.homeModules.catppuccin
