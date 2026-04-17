@@ -51,27 +51,27 @@ in {
       zellij.enable = true;
     };
     home.packages = with pkgs; [
+      alejandra
       croc
       dive
       doggo
-      glow
-      gum
       fastfetch
+      fd
       fzf-make
       git-workspace
+      glow
+      gum
       just
       ncdu
+      nix-output-monitor
       oh-my-posh
+      p7zip
       prettyping
       pv
       pwgen
       rsync
-      fd
       viu
       xcp
-      alejandra
-      p7zip
-      nix-output-monitor
     ];
     xdg.configFile."oh-my-posh/dracula.omp.json".source = oh-my-posh/dracula.omp.json;
 
