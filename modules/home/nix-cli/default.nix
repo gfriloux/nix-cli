@@ -57,6 +57,7 @@ in {
       zoxide.enable = true;
     };
     home.packages = with pkgs; [
+      age
       alejandra
       croc
       dive
@@ -76,6 +77,7 @@ in {
       pv
       pwgen
       rsync
+      sops
       viu
       xcp
     ];
