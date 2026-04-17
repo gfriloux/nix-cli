@@ -53,6 +53,7 @@ in {
       television.enable = true;
       television-ssh.enable = true;
       zellij.enable = true;
+      zoxide.enable = true;
     };
     home.packages = with pkgs; [
       alejandra
