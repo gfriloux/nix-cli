@@ -23,7 +23,6 @@ in {
       atuin.enable = true;
       bat.enable = true;
       btop.enable = true;
-      delta.enable = true;
       fish = {
         enable = true;
         shellInit = ''
@@ -36,7 +35,10 @@ in {
         };
       };
       fzf.enable = true;
-      git.enable = true;
+      git = {
+        enable = true;
+        delta.enable = true;
+      };
       gitflow-toolkit.enable = true;
       helix.enable = true;
       jq.enable = true;
