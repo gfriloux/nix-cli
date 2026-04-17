@@ -41,6 +41,7 @@ in {
       direnv = {
         enable = true;
         nix-direnv.enable = true;
+        silent = true;
       };
       fzf.enable = true;
       git.enable = true;
